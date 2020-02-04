@@ -1,0 +1,11 @@
+Source: suscan
+Maintainer: Andres Perez <andres.perez.ea1iff@gmail.com>
+Build-Depends: sigutils,libfftw3-dev,libsndfile1-dev,libsoapysdr-dev,libxml2-dev,cmake,build-essential
+Standards-Version: 0.1
+Section: utils
+
+Package: suscan
+Priority: extra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}  
+Description: Suscan is a realtime DSP processing library. It provides a set of useful abstractions to perform dynamic digital signal analysis and demodulation.

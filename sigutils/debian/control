@@ -1,0 +1,11 @@
+Source: sigutils
+Maintainer: Andres Perez <andres.perez.ea1iff@gmail.com>
+Build-Depends: libfftw3-dev (>= 3.0),libsndfile1-dev (>= 1.0.2),cmake (>= 3.7.2),libvolk1-dev (>= 1.0), build-essential
+Standards-Version: 0.1
+Section: utils
+
+Package: sigutils
+Priority: extra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}  
+Description: The sigutils library is a digital signal processing library written in C, designed for blind signal analysis and automatic demodulation in GNU/Linux.

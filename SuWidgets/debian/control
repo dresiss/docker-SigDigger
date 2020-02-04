@@ -1,0 +1,11 @@
+Source: SuWidgets
+Maintainer: Andres Perez <andres.perez.ea1iff@gmail.com>
+Build-Depends: qt5-default, build-essential
+Standards-Version: 0.1
+Section: utils
+
+Package: SuWidgets
+Priority: extra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}  
+Description: Sigutils-related widgets 

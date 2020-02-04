@@ -1,0 +1,11 @@
+Source: SigDigger
+Maintainer: Andres Perez <andres.perez.ea1iff@gmail.com>
+Build-Depends: build-essential 
+Standards-Version: 0.1
+Section: utils
+
+Package: SigDigger
+Priority: extra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}  
+Description: SigDigger is the continuation project for the already-deprecated Suscan. GTK+3.0 ended up falling short (especially in terms of performance) and exposing Suscan's API to C++ paid off.

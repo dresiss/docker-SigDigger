@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+clean:
+	@# Do nothing
+
+build:
+	qmake SuWidgetsLib.pro
+	make
+
+binary:
+	make install
+	dh_gencontrol
+	dh_builddeb
+
