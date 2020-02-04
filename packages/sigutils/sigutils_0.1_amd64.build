@@ -1,0 +1,227 @@
+ dpkg-buildpackage -us -uc -ui
+dpkg-buildpackage: info: source package sigutils
+dpkg-buildpackage: info: source version 0.1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Andres Perez <andres.perez.ea1iff@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+make: Nothing to be done for 'clean'.
+ dpkg-source -b .
+dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
+dpkg-source: warning: source directory 'sigutils' is not <sourcepackage>-<upstreamversion> 'sigutils-0.1'
+dpkg-source: info: using source format '1.0'
+dpkg-source: info: building sigutils in sigutils_0.1.tar.gz
+dpkg-source: info: building sigutils in sigutils_0.1.dsc
+ debian/rules build
+cmake .
+-- The C compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Checking for module 'sndfile>=1.0.2'
+--   Found sndfile, version 1.0.28
+-- Checking for module 'fftw3f>=3.0'
+--   Found fftw3f, version 3.3.8
+-- Checking for module 'volk>=1.0'
+--   Found volk, version 1.4
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /sigutils
+make
+make[1]: Entering directory '/sigutils'
+make[2]: Entering directory '/sigutils'
+make[3]: Entering directory '/sigutils'
+Scanning dependencies of target sigutils
+make[3]: Leaving directory '/sigutils'
+make[3]: Entering directory '/sigutils'
+[  2%] Building C object CMakeFiles/sigutils.dir/util/util.c.o
+[  4%] Building C object CMakeFiles/sigutils.dir/sigutils/agc.c.o
+[  6%] Building C object CMakeFiles/sigutils.dir/sigutils/block.c.o
+[  9%] Building C object CMakeFiles/sigutils.dir/sigutils/clock.c.o
+[ 11%] Building C object CMakeFiles/sigutils.dir/sigutils/codec.c.o
+[ 13%] Building C object CMakeFiles/sigutils.dir/sigutils/coef.c.o
+[ 15%] Building C object CMakeFiles/sigutils.dir/sigutils/detect.c.o
+[ 18%] Building C object CMakeFiles/sigutils.dir/sigutils/equalizer.c.o
+[ 20%] Building C object CMakeFiles/sigutils.dir/sigutils/iir.c.o
+[ 22%] Building C object CMakeFiles/sigutils.dir/sigutils/lfsr.c.o
+[ 25%] Building C object CMakeFiles/sigutils.dir/sigutils/lib.c.o
+[ 27%] Building C object CMakeFiles/sigutils.dir/sigutils/log.c.o
+[ 29%] Building C object CMakeFiles/sigutils.dir/sigutils/modem.c.o
+[ 31%] Building C object CMakeFiles/sigutils.dir/sigutils/ncqo.c.o
+[ 34%] Building C object CMakeFiles/sigutils.dir/sigutils/pll.c.o
+[ 36%] Building C object CMakeFiles/sigutils.dir/sigutils/property.c.o
+[ 38%] Building C object CMakeFiles/sigutils.dir/sigutils/softtune.c.o
+[ 40%] Building C object CMakeFiles/sigutils.dir/sigutils/specttuner.c.o
+[ 43%] Building C object CMakeFiles/sigutils.dir/sigutils/taps.c.o
+[ 45%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/agc.c.o
+[ 47%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/clock.c.o
+[ 50%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/pll.c.o
+[ 52%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/tuner.c.o
+[ 54%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/filt.c.o
+[ 56%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/siggen.c.o
+[ 59%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/wavfile.c.o
+[ 61%] Building C object CMakeFiles/sigutils.dir/sigutils/codecs/diff.c.o
+[ 63%] Building C object CMakeFiles/sigutils.dir/sigutils/modems/qpsk.c.o
+[ 65%] Linking C shared library libsigutils.so
+make[3]: Leaving directory '/sigutils'
+[ 65%] Built target sigutils
+make[3]: Entering directory '/sigutils'
+Scanning dependencies of target sutest
+make[3]: Leaving directory '/sigutils'
+make[3]: Entering directory '/sigutils'
+[ 68%] Building C object CMakeFiles/sutest.dir/src/tests/agc.c.o
+[ 70%] Building C object CMakeFiles/sutest.dir/src/tests/block.c.o
+[ 72%] Building C object CMakeFiles/sutest.dir/src/tests/clock.c.o
+[ 75%] Building C object CMakeFiles/sutest.dir/src/tests/costas.c.o
+[ 77%] Building C object CMakeFiles/sutest.dir/src/tests/detect.c.o
+[ 79%] Building C object CMakeFiles/sutest.dir/src/tests/filt.c.o
+[ 81%] Building C object CMakeFiles/sutest.dir/src/main.c.o
+[ 84%] Building C object CMakeFiles/sutest.dir/src/tests/ncqo.c.o
+[ 86%] Building C object CMakeFiles/sutest.dir/src/tests/codec.c.o
+[ 88%] Building C object CMakeFiles/sutest.dir/src/tests/pll.c.o
+[ 90%] Building C object CMakeFiles/sutest.dir/src/tests/specttuner.c.o
+[ 93%] Building C object CMakeFiles/sutest.dir/testutil/common.c.o
+[ 95%] Building C object CMakeFiles/sutest.dir/testutil/poolhelper.c.o
+[ 97%] Building C object CMakeFiles/sutest.dir/testutil/sigbufpool.c.o
+[100%] Linking C executable sutest
+make[3]: Leaving directory '/sigutils'
+[100%] Built target sutest
+make[2]: Leaving directory '/sigutils'
+make[1]: Leaving directory '/sigutils'
+ debian/rules binary
+make install
+make[1]: Entering directory '/sigutils'
+make[2]: Entering directory '/sigutils'
+make[3]: Entering directory '/sigutils'
+make[3]: Leaving directory '/sigutils'
+make[3]: Entering directory '/sigutils'
+[  2%] Building C object CMakeFiles/sigutils.dir/util/util.c.o
+[  4%] Building C object CMakeFiles/sigutils.dir/sigutils/agc.c.o
+[  6%] Building C object CMakeFiles/sigutils.dir/sigutils/block.c.o
+[  9%] Building C object CMakeFiles/sigutils.dir/sigutils/clock.c.o
+[ 11%] Building C object CMakeFiles/sigutils.dir/sigutils/codec.c.o
+[ 13%] Building C object CMakeFiles/sigutils.dir/sigutils/coef.c.o
+[ 15%] Building C object CMakeFiles/sigutils.dir/sigutils/detect.c.o
+[ 18%] Building C object CMakeFiles/sigutils.dir/sigutils/equalizer.c.o
+[ 20%] Building C object CMakeFiles/sigutils.dir/sigutils/iir.c.o
+[ 22%] Building C object CMakeFiles/sigutils.dir/sigutils/lfsr.c.o
+[ 25%] Building C object CMakeFiles/sigutils.dir/sigutils/lib.c.o
+[ 27%] Building C object CMakeFiles/sigutils.dir/sigutils/log.c.o
+[ 29%] Building C object CMakeFiles/sigutils.dir/sigutils/modem.c.o
+[ 31%] Building C object CMakeFiles/sigutils.dir/sigutils/ncqo.c.o
+[ 34%] Building C object CMakeFiles/sigutils.dir/sigutils/pll.c.o
+[ 36%] Building C object CMakeFiles/sigutils.dir/sigutils/property.c.o
+[ 38%] Building C object CMakeFiles/sigutils.dir/sigutils/softtune.c.o
+[ 40%] Building C object CMakeFiles/sigutils.dir/sigutils/specttuner.c.o
+[ 43%] Building C object CMakeFiles/sigutils.dir/sigutils/taps.c.o
+[ 45%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/agc.c.o
+[ 47%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/clock.c.o
+[ 50%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/pll.c.o
+[ 52%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/tuner.c.o
+[ 54%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/filt.c.o
+[ 56%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/siggen.c.o
+[ 59%] Building C object CMakeFiles/sigutils.dir/sigutils/blocks/wavfile.c.o
+[ 61%] Building C object CMakeFiles/sigutils.dir/sigutils/codecs/diff.c.o
+[ 63%] Building C object CMakeFiles/sigutils.dir/sigutils/modems/qpsk.c.o
+[ 65%] Linking C shared library libsigutils.so
+make[3]: Leaving directory '/sigutils'
+[ 65%] Built target sigutils
+make[3]: Entering directory '/sigutils'
+make[3]: Leaving directory '/sigutils'
+make[3]: Entering directory '/sigutils'
+[ 68%] Building C object CMakeFiles/sutest.dir/src/tests/agc.c.o
+[ 70%] Building C object CMakeFiles/sutest.dir/src/tests/block.c.o
+[ 72%] Building C object CMakeFiles/sutest.dir/src/tests/clock.c.o
+[ 75%] Building C object CMakeFiles/sutest.dir/src/tests/costas.c.o
+[ 77%] Building C object CMakeFiles/sutest.dir/src/tests/detect.c.o
+[ 79%] Building C object CMakeFiles/sutest.dir/src/tests/filt.c.o
+[ 81%] Building C object CMakeFiles/sutest.dir/src/main.c.o
+[ 84%] Building C object CMakeFiles/sutest.dir/src/tests/ncqo.c.o
+[ 86%] Building C object CMakeFiles/sutest.dir/src/tests/codec.c.o
+[ 88%] Building C object CMakeFiles/sutest.dir/src/tests/pll.c.o
+[ 90%] Building C object CMakeFiles/sutest.dir/src/tests/specttuner.c.o
+[ 93%] Building C object CMakeFiles/sutest.dir/testutil/common.c.o
+[ 95%] Building C object CMakeFiles/sutest.dir/testutil/poolhelper.c.o
+[ 97%] Building C object CMakeFiles/sutest.dir/testutil/sigbufpool.c.o
+[100%] Linking C executable sutest
+make[3]: Leaving directory '/sigutils'
+[100%] Built target sutest
+make[2]: Leaving directory '/sigutils'
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: /usr/local/lib/pkgconfig/sigutils.pc
+-- Installing: /usr/local/include/sigutils/agc.h
+-- Installing: /usr/local/include/sigutils/block.h
+-- Installing: /usr/local/include/sigutils/clock.h
+-- Installing: /usr/local/include/sigutils/codec.h
+-- Installing: /usr/local/include/sigutils/coef.h
+-- Installing: /usr/local/include/sigutils/decider.h
+-- Installing: /usr/local/include/sigutils/detect.h
+-- Installing: /usr/local/include/sigutils/equalizer.h
+-- Installing: /usr/local/include/sigutils/iir.h
+-- Installing: /usr/local/include/sigutils/lfsr.h
+-- Installing: /usr/local/include/sigutils/log.h
+-- Installing: /usr/local/include/sigutils/modem.h
+-- Installing: /usr/local/include/sigutils/ncqo.h
+-- Installing: /usr/local/include/sigutils/pll.h
+-- Installing: /usr/local/include/sigutils/property.h
+-- Installing: /usr/local/include/sigutils/sampling.h
+-- Installing: /usr/local/include/sigutils/sigutils.h
+-- Installing: /usr/local/include/sigutils/softtune.h
+-- Installing: /usr/local/include/sigutils/specttuner.h
+-- Installing: /usr/local/include/sigutils/taps.h
+-- Installing: /usr/local/include/sigutils/types.h
+-- Installing: /usr/local/include/sigutils/util/util.h
+-- Installing: /usr/local/lib/libsigutils.so
+make[1]: Leaving directory '/sigutils'
+dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package sigutils: substitution variable ${shlibs:Depends} used, but is not defined
+dh_builddeb
+dpkg-deb: building package 'sigutils' in '../sigutils_0.1_amd64.deb'.
+ dpkg-genbuildinfo
+ dpkg-genchanges  >../sigutils_0.1_amd64.changes
+dpkg-genchanges: warning: missing Priority for source files
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+Now running lintian sigutils_0.1_amd64.changes ...
+warning: the authors of lintian do not recommend running it with root privileges!
+W: sigutils source: diff-contains-git-control-dir .git
+W: sigutils source: debhelper-compat-file-is-missing
+W: sigutils source: package-uses-deprecated-debhelper-compat-version 1
+E: sigutils source: package-uses-debhelper-but-lacks-build-depends
+E: sigutils source: missing-build-dependency-for-dh_-command dh_builddeb => debhelper | debhelper-compat
+W: sigutils source: missing-debian-source-format
+E: sigutils source: build-depends-on-build-essential build-depends
+E: sigutils source: debian-rules-not-a-makefile
+E: sigutils source: debian-rules-missing-required-target binary-arch
+E: sigutils source: debian-rules-missing-required-target binary-indep
+W: sigutils source: debian-rules-missing-recommended-target build-arch
+W: sigutils source: debian-rules-missing-recommended-target build-indep
+E: sigutils source: invalid-standards-version 0.1
+E: sigutils: changelog-file-missing-in-native-package
+E: sigutils: no-copyright-file
+W: sigutils: description-synopsis-starts-with-article
+W: sigutils: description-too-long
+E: sigutils: extended-description-is-empty
+W: sigutils: priority-extra-is-replaced-by-priority-optional
+W: sigutils: empty-binary-package
+Finished running lintian.
+
+WARNING generated by debuild:
+Making debian/rules executable!
+

@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Tue, 04 Feb 2020 11:00:10 +0000
+Source: sigutils
+Binary: sigutils
+Architecture: source amd64
+Version: 0.1
+Distribution: unstable
+Urgency: low
+Maintainer: Andres Perez <andres.perez.ea1iff@gmail.com>
+Changed-By: Andres Perez <andres.perez.ea1iff@gmail.com>
+Description:
+ sigutils   - The sigutils library is a digital signal processing library writt
+Changes:
+ sigutils (0.1) unstable; urgency=low
+ .
+   * Initial release.
+Checksums-Sha1:
+ 73fde6451031b4334574328df53381619339c2f7 593 sigutils_0.1.dsc
+ 7b83904567c2f0c8cadbe749ab954ab601313091 553999 sigutils_0.1.tar.gz
+ be84da93510eb70ec997dcd4cee13e8b865b4737 5121 sigutils_0.1_amd64.buildinfo
+ 8f0c6837fc0720fc1ac2aa5e5e8491beb124ccbd 792 sigutils_0.1_amd64.deb
+Checksums-Sha256:
+ 9100b6c195c0781aea30877c6aad898e647a61848b599c8b517691c65344cacd 593 sigutils_0.1.dsc
+ 8c645ce14e92df422c19b190044b26361c269724c706bbbf25144897759ff419 553999 sigutils_0.1.tar.gz
+ eedd3390814f7ce3ed5e1b31ae9f0a94b8b54589f0059b885961685b6309f467 5121 sigutils_0.1_amd64.buildinfo
+ a2b3aed55e3ddddc123703bba19c836152a910886ab8b67d1433473ae8ffbeec 792 sigutils_0.1_amd64.deb
+Files:
+ 2a9bec933409bbd88d359c3af4130c50 593 utils - sigutils_0.1.dsc
+ 6d3658d005134bfc5aceb973f302aee3 553999 utils - sigutils_0.1.tar.gz
+ 8f1effe5e0e5bcc63336dacb4e4884f0 5121 utils - sigutils_0.1_amd64.buildinfo
+ dd2dbc07a744d61d60293c44538ac500 792 utils extra sigutils_0.1_amd64.deb
